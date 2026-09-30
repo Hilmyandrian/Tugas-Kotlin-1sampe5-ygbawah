@@ -2,21 +2,21 @@
 
 fun main() {
     val scores = mutableMapOf<Int, Int>(
-        230101 to 85,
-        230102 to 90,
-        230103 to 78
+        24523001 to 85,
+        24523002 to 90,
+        24523003 to 78
     )
 
-    scores[230101] = 95
+    scores[24523001] = 95
 
-    scores.remove(230103)
+    scores.remove(24523003)
 
     println("Daftar Nilai Mahasiswa:")
     for ((nim, score) in scores) {
         println("NIM: $nim - Nilai: $score")
     }
 
-    val nonExistentNim = 230199
+    val nonExistentNim = 24523014
     val result = scores[nonExistentNim]
     println("\nNilai untuk NIM $nonExistentNim: $result")
 }
